@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/container1"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorbd"
+              android:orientation="vertical">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:id="@+id/round_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            >
+
+            <com.example.qiao.weixin2.Round.MyRoundProcess
+                android:id="@+id/my_round_process"
+                android:layout_width="180dip"
+                android:layout_height="180dip"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:alpha="0.7"
+                android:background="@android:color/white"
+                app:roundColor="@android:color/darker_gray"
+                app:roundProgressColor="@android:color/holo_red_dark"
+                app:textColor="@android:color/darker_gray"
+                app:textColor2="@android:color/darker_gray"
+                app:textSize="18sp"
+                app:textSize2="22sp"
+                />
+
+
+
+            <LinearLayout
+                android:id="@+id/chart_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/viewbd"
+                android:orientation="vertical"
+                android:paddingBottom="4dp"
+                android:paddingTop="6dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="曲线"
+                    />
+
+                <lecho.lib.hellocharts.view.LineChartView
+                    android:id="@+id/chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/viewbd"
+                >
+
+                <TextView
+                    android:id="@+id/tvshow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:shadowColor="#ff000000"
+                    android:shadowDx="8"
+                    android:shadowDy="8"
+                    android:shadowRadius="11"
+                    android:text="第一个窗口"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/viewbd"
+                >
+
+                <Button
+                    android:id="@+id/btn_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.6"
+                    android:background="@drawable/btn_shape"
+                    android:shadowColor="#ff000000"
+                    android:text="跳转"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/viewbd"
+                >
+
+                <Button
+                    android:id="@+id/btn_one1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.6"
+                    android:background="@drawable/btn_shape"
+                    android:shadowColor="#ff000000"
+                    android:text="跳转"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/viewbd"
+                >
+
+                <Button
+                    android:id="@+id/btn_one2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.6"
+                    android:background="@drawable/btn_shape"
+                    android:shadowColor="#ff000000"
+                    android:text="跳转"/>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/viewbd"
+            >
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

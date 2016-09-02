@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <item
+        android:id="@+id/action_connect"
+        android:icon="@drawable/bluetooth"
+        app:showAsAction="ifRoom"
+        android:title="@string/menu_addfriend"
+        />
+    <!--<item-->
+        <!--android:id="@+id/action_add"-->
+        <!--android:icon="@drawable/add1"-->
+        <!--app:showAsAction="never"-->
+        <!--android:title="@string/action_add"-->
+        <!--/>-->
+    <!--<item-->
+        <!--android:id="@+id/action_back"-->
+        <!--app:showAsAction="never"-->
+        <!--android:title="@string/menu_feedback"-->
+        <!--/>-->
+    <!--<item-->
+        <!--android:id="@+id/action_group_chat"-->
+        <!--android:icon="@drawable/chat"-->
+        <!--android:title="@string/action_group_chat"/>-->
+</menu>
