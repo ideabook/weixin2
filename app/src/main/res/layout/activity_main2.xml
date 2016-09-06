@@ -10,9 +10,12 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="46dp"
+        android:layout_height="66dp"
         android:layout_alignParentTop="true"
         android:background="@color/colorPrimaryDark"
+        android:popupTheme="@style/popupTheme"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
         app:theme="@style/popupTheme"
         >
     </android.support.v7.widget.Toolbar>
@@ -27,15 +30,19 @@
         android:layout_weight="1"
         >
     </android.support.v4.view.ViewPager>
-    <net.lucode.hackware.magicindicator.MagicIndicator
-        android:id="@+id/magic_indicator8"
+    <com.gigamole.navigationtabbar.ntb.NavigationTabBar
+        android:id="@+id/ntb_horizontal"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="@dimen/navigator_margin"
-        android:background="@drawable/tabbd4"
-        />
-
+        app:ntb_badge_gravity="top"
+        app:ntb_badge_position="right"
+        app:ntb_badged="true"
+        app:ntb_scaled="true"
+        app:ntb_tinted="true"
+        app:ntb_title_mode="all"
+        app:ntb_titled="true"
+        app:ntb_swiped="true"/>
 
 
     <com.nightonke.boommenu.BoomMenuButton
@@ -43,8 +50,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="25dp"
-        android:layout_marginLeft="145dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="60dp"
         app:boom_button_color="@color/colortext"
         app:boom_button_pressed_color="@color/colorPrimary"
         app:boom_inActionBar="false"

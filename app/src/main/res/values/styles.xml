@@ -18,6 +18,7 @@
     <style name="popupTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:textSize">15sp</item>
         <item name="android:textColor">@color/tabcolor</item>
+
         <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
         <item name="android:actionOverflowButtonStyle">@style/OverflowButtonStyle</item>
     </style>

@@ -24,7 +24,7 @@
         app:ntb_scaled="true"
         app:ntb_tinted="true"
         app:ntb_title_mode="all"
-        app:ntb_titled="false"
+        app:ntb_titled="true"
         app:ntb_swiped="true"/>
 
 </LinearLayout>

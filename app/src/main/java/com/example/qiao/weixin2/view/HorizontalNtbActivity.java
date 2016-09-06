@@ -66,14 +66,18 @@ public class HorizontalNtbActivity extends Activity {
                 new NavigationTabBar.Model.Builder(
                         getResources().getDrawable(R.drawable.ic_first),
                         Color.parseColor(colors[0]))
+                        .selectedIcon(getResources().getDrawable(R.drawable.ic_sixth))
                         .title("Heart")
+                        .badgeTitle("NTB")
                         .build()
         );
         models.add(
                 new NavigationTabBar.Model.Builder(
                         getResources().getDrawable(R.drawable.ic_second),
                         Color.parseColor(colors[1]))
+//                        .selectedIcon(getResources().getDrawable(R.drawable.ic_eighth))
                         .title("Cup")
+                        .badgeTitle("with")
                         .build()
         );
         models.add(
@@ -81,13 +85,16 @@ public class HorizontalNtbActivity extends Activity {
                         getResources().getDrawable(R.drawable.ic_third),
                         Color.parseColor(colors[2]))
                         .title("Diploma")
+                        .badgeTitle("state")
                         .build()
         );
         models.add(
                 new NavigationTabBar.Model.Builder(
                         getResources().getDrawable(R.drawable.ic_fourth),
                         Color.parseColor(colors[3]))
+//                        .selectedIcon(getResources().getDrawable(R.drawable.ic_eighth))
                         .title("Flag")
+                        .badgeTitle("icon")
                         .build()
         );
         models.add(
@@ -95,12 +102,12 @@ public class HorizontalNtbActivity extends Activity {
                         getResources().getDrawable(R.drawable.ic_fifth),
                         Color.parseColor(colors[4]))
                         .title("Medal")
+                        .badgeTitle("777")
                         .build()
         );
+
         navigationTabBar.setModels(models);
         navigationTabBar.setViewPager(viewPager, 2);
-        navigationTabBar.setBehaviorEnabled(true);
-        navigationTabBar.setIsBadged(false);
         navigationTabBar.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(final int position, final float positionOffset, final int positionOffsetPixels) {
@@ -116,7 +123,6 @@ public class HorizontalNtbActivity extends Activity {
             public void onPageScrollStateChanged(final int state) {
 
             }
-
         });
 
         navigationTabBar.postDelayed(new Runnable() {
